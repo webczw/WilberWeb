@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCF45AE3-57DE-4C61-BA68-0F5CDA31FFBB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wilber.Web</RootNamespace>
+    <AssemblyName>WilberWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Root\Document\2017\web\webczw\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\boostrap-files\css\bootstrap.css" />
+    <Content Include="assets\boostrap-files\css\bootstrap.min.css" />
+    <Content Include="assets\boostrap-files\css\dist\css\bootstrap.css" />
+    <Content Include="assets\boostrap-files\js\bootstrap.min.js" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\calendar.css" />
+    <Content Include="assets\css\colour-scheme\color-blue.css" />
+    <Content Include="assets\css\colour-scheme\color-brown.css" />
+    <Content Include="assets\css\colour-scheme\color-green.css" />
+    <Content Include="assets\css\colour-scheme\color-orange.css" />
+    <Content Include="assets\css\colour-scheme\color-purple.css" />
+    <Content Include="assets\css\colour-scheme\color-red.css" />
+    <Content Include="assets\css\component.css" />
+    <Content Include="assets\css\contact.form.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\owl.theme.css" />
+    <Content Include="assets\css\respons.css" />
+    <Content Include="assets\css\slider.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\switcher.css" />
+    <Content Include="assets\fancybox\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.css" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.pack.js" />
+    <Content Include="assets\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\img\blog\post1.png" />
+    <Content Include="assets\img\blog\post2.png" />
+    <Content Include="assets\img\blog_l.png" />
+    <Content Include="assets\img\close.svg" />
+    <Content Include="assets\img\comment_foto.png" />
+    <Content Include="assets\img\contact_l.png" />
+    <Content Include="assets\img\favicons\apple-touch-icon-114x114.png" />
+    <Content Include="assets\img\favicons\apple-touch-icon-144x144.png" />
+    <Content Include="assets\img\favicons\apple-touch-icon-72x72.png" />
+    <Content Include="assets\img\favicons\apple-touch-icon.png" />
+    <Content Include="assets\img\favicons\favicon.png" />
+    <Content Include="assets\img\I-f1.jpg" />
+    <Content Include="assets\img\I-f2.jpg" />
+    <Content Include="assets\img\I-f3.jpg" />
+    <Content Include="assets\img\I-f4.jpg" />
+    <Content Include="assets\img\I-f5.jpg" />
+    <Content Include="assets\img\I-f6.jpg" />
+    <Content Include="assets\img\loading-circle.gif" />
+    <Content Include="assets\img\menu\blog.gif" />
+    <Content Include="assets\img\menu\blog.png" />
+    <Content Include="assets\img\menu\contact.gif" />
+    <Content Include="assets\img\menu\contact.png" />
+    <Content Include="assets\img\menu\portfolio.gif" />
+    <Content Include="assets\img\menu\portfolio.png" />
+    <Content Include="assets\img\menu\profile.gif" />
+    <Content Include="assets\img\menu\profile.png" />
+    <Content Include="assets\img\menu\resume.gif" />
+    <Content Include="assets\img\menu\resume.png" />
+    <Content Include="assets\img\photo - 副本.png" />
+    <Content Include="assets\img\photo.png" />
+    <Content Include="assets\img\portfolio\p1.png" />
+    <Content Include="assets\img\portfolio\p2.png" />
+    <Content Include="assets\img\portfolio\p3.png" />
+    <Content Include="assets\img\portfolio\p4.png" />
+    <Content Include="assets\img\portfolio\p5.png" />
+    <Content Include="assets\img\portfolio\p6.png" />
+    <Content Include="assets\img\portfolio\p7.png" />
+    <Content Include="assets\img\portfolio\p8.png" />
+    <Content Include="assets\img\portfolio\p9.png" />
+    <Content Include="assets\img\portfolio\p_b1.png" />
+    <Content Include="assets\img\portfolio\p_b2.png" />
+    <Content Include="assets\img\portfolio\p_b3.png" />
+    <Content Include="assets\img\portfolio\p_b4.png" />
+    <Content Include="assets\img\portfolio\p_b5.png" />
+    <Content Include="assets\img\portfolio\p_b6.png" />
+    <Content Include="assets\img\portfolio\p_b7.png" />
+    <Content Include="assets\img\portfolio\p_b8.png" />
+    <Content Include="assets\img\portfolio\p_b9.png" />
+    <Content Include="assets\img\portfolio_l.png" />
+    <Content Include="assets\img\profile_l.png" />
+    <Content Include="assets\img\resume_l.png" />
+    <Content Include="assets\img\S-c1.png" />
+    <Content Include="assets\img\S-c2.png" />
+    <Content Include="assets\img\S-c3.png" />
+    <Content Include="assets\img\S-c4.png" />
+    <Content Include="assets\img\S-c5.png" />
+    <Content Include="assets\img\S-c6.png" />
+    <Content Include="assets\img\search-grey.svg" />
+    <Content Include="assets\img\t-s1.jpg" />
+    <Content Include="assets\img\t-s2.jpg" />
+    <Content Include="assets\img\t-s3.jpg" />
+    <Content Include="assets\js\contact_scripts.js" />
+    <Content Include="assets\js\jquery-1.11.2.min.js" />
+    <Content Include="assets\js\jquery.appear.js" />
+    <Content Include="assets\js\jquery.calendario.js" />
+    <Content Include="assets\js\jquery.cookie.js" />
+    <Content Include="assets\js\jquery.countTo.js" />
+    <Content Include="assets\js\jquery.flexslider-min.js" />
+    <Content Include="assets\js\jquery.inview.min.js" />
+    <Content Include="assets\js\jquery.knob.min.js" />
+    <Content Include="assets\js\jquery.mixitup.min.js" />
+    <Content Include="assets\js\jquery.ratyli.js" />
+    <Content Include="assets\js\modernizr.custom.js" />
+    <Content Include="assets\js\modernizr.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\portfolio_scripts.js" />
+    <Content Include="assets\js\prefixfree.min.js" />
+    <Content Include="assets\js\scripts.js" />
+    <Content Include="Blog.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="dao\db\webczw_db.mdb" />
+    <Content Include="Default.aspx" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Map.aspx" />
+    <Content Include="Portfolio.aspx" />
+    <Content Include="Resume.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controller\articles.ashx.cs">
+      <DependentUpon>articles.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.aspx.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portfolio.aspx.designer.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resume.aspx.designer.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\boostrap-files\css\less\alerts.less" />
+    <Content Include="assets\boostrap-files\css\less\badges.less" />
+    <Content Include="assets\boostrap-files\css\less\breadcrumbs.less" />
+    <Content Include="assets\boostrap-files\css\less\button-groups.less" />
+    <Content Include="assets\boostrap-files\css\less\buttons.less" />
+    <Content Include="assets\boostrap-files\css\less\carousel.less" />
+    <Content Include="assets\boostrap-files\css\less\close.less" />
+    <Content Include="assets\boostrap-files\css\less\code.less" />
+    <Content Include="assets\boostrap-files\css\less\component-animations.less" />
+    <Content Include="assets\boostrap-files\css\less\dropdowns.less" />
+    <Content Include="assets\boostrap-files\css\less\forms.less" />
+    <Content Include="assets\boostrap-files\css\less\glyphicons.less" />
+    <Content Include="assets\boostrap-files\css\less\grid.less" />
+    <Content Include="assets\boostrap-files\css\less\input-groups.less" />
+    <Content Include="assets\boostrap-files\css\less\jumbotron.less" />
+    <Content Include="assets\boostrap-files\css\less\labels.less" />
+    <Content Include="assets\boostrap-files\css\less\list-group.less" />
+    <Content Include="assets\boostrap-files\css\less\media.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\alerts.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\background-variant.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\border-radius.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\buttons.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\center-block.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\clearfix.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\forms.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\gradients.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\grid-framework.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\grid.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\hide-text.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\image.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\labels.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\list-group.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\nav-divider.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\nav-vertical-align.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\opacity.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\pagination.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\panels.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\progress-bar.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\reset-filter.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\reset-text.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\responsive-visibility.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\tab-focus.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\table-row.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\text-emphasis.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\text-overflow.less" />
+    <Content Include="assets\boostrap-files\css\less\mixins\vendor-prefixes.less" />
+    <Content Include="assets\boostrap-files\css\less\modals.less" />
+    <Content Include="assets\boostrap-files\css\less\navbar.less" />
+    <Content Include="assets\boostrap-files\css\less\navs.less" />
+    <Content Include="assets\boostrap-files\css\less\normalize.less" />
+    <Content Include="assets\boostrap-files\css\less\pager.less" />
+    <Content Include="assets\boostrap-files\css\less\pagination.less" />
+    <Content Include="assets\boostrap-files\css\less\panels.less" />
+    <Content Include="assets\boostrap-files\css\less\popovers.less" />
+    <Content Include="assets\boostrap-files\css\less\print.less" />
+    <Content Include="assets\boostrap-files\css\less\progress-bars.less" />
+    <Content Include="assets\boostrap-files\css\less\responsive-embed.less" />
+    <Content Include="assets\boostrap-files\css\less\responsive-utilities.less" />
+    <Content Include="assets\boostrap-files\css\less\scaffolding.less" />
+    <Content Include="assets\boostrap-files\css\less\tables.less" />
+    <Content Include="assets\boostrap-files\css\less\thumbnails.less" />
+    <Content Include="assets\boostrap-files\css\less\tooltip.less" />
+    <Content Include="assets\boostrap-files\css\less\type.less" />
+    <Content Include="assets\boostrap-files\css\less\utilities.less" />
+    <Content Include="assets\boostrap-files\css\less\wells.less" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\img\photo1.psd" />
+    <Content Include="assets\img\ss.psd" />
+    <Content Include="assets\img\未标题-1.psd" />
+    <Content Include="assets\img\未标题-2.psd" />
+    <Content Include="controller\articles.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WilberModels\WilberModels.csproj">
+      <Project>{244b09c7-9ae1-4f01-bf0d-fbf827734d31}</Project>
+      <Name>WilberModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WilberServices\WilberServices.csproj">
+      <Project>{384625f8-6a16-401c-ba2b-f095cbf15a9a}</Project>
+      <Name>WilberServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62888</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62888</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
