@@ -17,6 +17,7 @@ namespace Wilber.Web.controller
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
+            //查询列表
             List<ArticlesVO> list = articlesService.findList();
             string json  = JsonConvert.SerializeObject(list);
             context.Response.Write(json);
